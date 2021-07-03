@@ -8,13 +8,11 @@ long long int fpw(long long int x,long long int y)
     else if(y%2==0)
     {
         long long int tmp=fpw(x,y/2);
-        //printf("a %lld\n",tmp);
         return ((tmp%m)*(tmp%m))%m;
     }
     else
     {
         long long int tmp=fpw(x,y/2);
-        //printf("b %lld\n",tmp);
         return ((((tmp%m)*(tmp%m))%m)*(x%m))%m;
     }
 }
