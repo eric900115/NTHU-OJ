@@ -28,11 +28,10 @@ void insert(Node **main_head, char *color, int dest)
         pre = NULL;
 
         for (int counter = 1; counter <= dest; counter++)
-            /
-            {
-                pre = cur;
-                cur = cur->next;
-            }
+        {
+            pre = cur;
+            cur = cur->next;
+        }
         np->next = cur;
         pre->next = np;
     }
